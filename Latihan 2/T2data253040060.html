@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Mahasiswa</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th {
+            background-color: #555;
+            color: white;
+            padding: 8px;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 200px;
+        }
+        textarea {
+            height: 70px;
+        }
+        input[type="submit"] {
+            margin: 8px;
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <table border="1">
+            <tr>
+                <th colspan="2">INPUT DATA MAHASISWA</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>: <input type="text" name="Farel"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>: <input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Fullname</td>
+                <td>: <input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>: <input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:
+                    <select name="agama">
+                        <option>--Pilih Agama--</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:
+                    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>:
+                    <input type="checkbox" name="hobi" value="Musik"> Musik
+                    <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+                    <input type="checkbox" name="hobi" value="Gaming"> Gaming
+                    <input type="checkbox" name="hobi" value="Lainnya"> Lainnya
+                </td>
+            </tr>
+            <tr>
+                <td>Profil singkat</td>
+                <td>: <textarea name="profil"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="Input">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
