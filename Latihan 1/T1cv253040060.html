@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curriculum Vitae</title>
+  <style>
+    /* Reset kecil */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #111; /* latar gelap seperti foto */
+      font-family: "Georgia", "Times New Roman", serif;
+      color: #222;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .paper {
+      background: #f7f7f3;
+      width: 880px; /* lebar mirip contoh */
+      border: 1px solid #bdbdb3;
+      box-shadow: 0 6px 0 rgba(0,0,0,0.35);
+    }
+
+    /* Judul utama di atas, center */
+    .title {
+      text-align: center;
+      padding: 18px 0;
+      letter-spacing: 2px;
+      font-size: 32px;
+      border-bottom: 1px solid #cfcfc6;
+      font-weight: 700;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 240px; /* kolom kiri besar, kanan untuk foto */
+      gap: 24px;
+      padding: 22px 28px;
+      min-height: 520px;
+    }
+
+    /* Kolom kiri: teks CV */
+    .left {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    .left .meta small {
+      display: block;
+      color: #3b3b3b;
+      margin-bottom: 8px;
+    }
+
+    h3.section {
+      font-size: 13px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      margin-left: 18px;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* Kolom kanan: foto */
+    .right {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      padding-top: 6px;
+    }
+
+    .photo {
+      width: 200px;
+      border: 6px solid #fff;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+      background: #eee;
+    }
+
+    /* Footer (opsional) */
+    .footer {
+      height: 10px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+      border-top: 1px solid #e6e6e0;
+    }
+
+    /* responsive kecil */
+    @media (max-width: 720px) {
+      .paper { width: 95%; }
+      .content { grid-template-columns: 1fr; }
+      .right { margin-top: 12px; justify-content: center; }
+      .photo { width: 160px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="paper" role="document">
+    <div class="title">CURRICULUM VITAE</div>
+
+    <div class="content">
+      <div class="left">
+        <div class="meta">
+          <small>Nama : <strong>Mochammad Farel Fikriawan</strong></small>
+          <small>Alamat : Dusun Karang Anyar,Kota Cirebon</small>
+          <small>No Telepon : 085722028290</small>
+          <small>email : <a href="muhammadfarelfikriawan@gmail.com">muhammadfarelfikriawan@gmail.com</a></small>
+        </div>
+
+        <h3 class="section">DESKRIPSI</h3>
+        <p>  Halo! Saya Mochammad Farel Fikriawan, mahasiswa Informatika yang suka ngoding dan desain tampilan aplikasi. Saat ini saya sedang belajar.
+          semasa SMK saya masuk jurusan TKR(Teknik Kendaraan Ringan) dan sekarang saya memilih Teknik Informatika.</p>
+
+        <h3 class="section">PENDIDIKAN</h3>
+        <ul>
+          <li>SD : SDN 1 CIKULAK KIDUL</li>
+          <li>SMP : SMPN 1 WALED</li>
+          <li>SMU : SMK AL-JABBAR CILEDUG</li>
+        </ul>
+
+        <h3 class="section">SEMINAR / WORKSHOP</h3>
+        <ol>
+          <li>Seminar ...</li>
+          <li>Seminar ...</li>
+          <li>Workshop ...</li>
+        </ol>
+        <p class="note"></p>
+
+        <h3 class="section">PELATIHAN</h3>
+        <ol>
+          <li>Pelatihan ...</li>
+        </ol>
+
+        <h3 class="section">BAHASA PEMROGRAMAN</h3>
+        <ul>
+          <li>C / C++</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <!-- Ganti src ke path foto Anda, mis: images/photo.jpg -->
+        <img class="photo" src="farel.jpeg" alt="foto profil">
+      </div>
+    </div>
+
+    <div class="footer" aria-hidden="true"></div>
+  </div>
+</body>
+</html>
